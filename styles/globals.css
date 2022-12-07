@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Secular+One&display=swap');
+:root{
+  --main: white;
+  --alternative-main: rgb(240,240,255);
+  --secondary: #0088d6;
+  --contrast: black; 
+  --contrastSoft: rgb(30,30,30);
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+p, span{
+  font-family: 'Montserrat', sans-serif;
+  color: var(--contrastSoft);
+}
+*{
+  outline: none;
+  font-family: 'Secular One', sans-serif;
+  box-sizing: border-box; 
+  font-weight: 500;
+}
+div, section{
+  transition: 1s;
+}
+article{
+  transition: 0;
+}
+.image-logo{
+  position: relative;
+  width: calc(7vw + 5rem + 10px);
+  height: calc(2vw + 2rem + 10px);
+}
+nav{
+  padding: 1rem 5vw;
+  height: calc(6rem + 10px);
+  background-color: transparent;
+     color: var(--contrast);
+     font-family: 'Rubik', sans-serif;
+     position: fixed;
+     width: 100vw;
+     top: 0;
+     transition: 1s;
+     z-index: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+     box-shadow: 0 0 10px var(--contrast);
+}
+nav.solidBack{
+  background-color: var(--main);
+}
+@media screen and (max-width: 650px) {
+  nav{
+    position: sticky;
+    background-color: var(--main);
+  }
+}
+button{transition: 1s;}
+.button{
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  transition:  1s color 0;
+  border-radius: 5px;
+}
+.button.nav-button{
+  font-size: calc(1vmax + 10px);
+}
+.button:hover, .button.nav-button:hover{
+  transform: translateY(-10px);
+  background-color: var(--secondary);
+}
+.button.nav-button{
+  color: var(--main);
+  background-color: var(--contrast);
+}
+.slider{
+  height: calc(28vw + 20rem);
+  width: 100vw;
+}
+.img-slide{
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+}
+.slider-header{
+  position: absolute;
+  height: calc(28vw + 20rem);
+  background-color: rgba(0,0,0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  color: var(--main);
+  text-align: center;
+  z-index: 2;
+}
+.slider-header div{
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 5px;
+  padding: 1rem;
+}
+.slider-header h2{
+  margin: auto 0 ;
+  font-size: calc(1rem + 1vw + 1vh + 10px);
+}
+.slider-header h5{
+  margin: auto 0 1rem 0;
+  font-size: calc((1rem + 1vw + 1vh + 10px) / 2);
+}
+.slider-header button{
+  color: var(--main);
+  background-color: var(--secondary);
+  font-size: calc((1rem + 1vw + 1vh + 10px) / 2);
+}
+.about{
+  margin: 2rem 5vw;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.about h2, .simple-h2{
+  color: var(--contrast);
+  margin: 10px 0;
+  padding: 0;
+  font-size: calc(1rem + 1vw + 1vh);
+}
+.about p{
+  width: clamp(300px, 60%, 60%);
+  margin-top: 0;
+  padding-top: 0;
+}
+.restaurant{
+  position: relative;
+  width: clamp(300px, 50vw, 50vw);
+  height: clamp(150px, 40vh, 40vh);
+}
+.restaurant img{
+  border-radius: 10px;
+}
+.section{
+  padding: 2rem 5vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.section.alternative-back{
+  background-color: var(--alternative-main);
+}
+.section iframe{
+  width: clamp(300px, 50vw, 50vw);
+  height: clamp(200px, 50vh, 50vh);
+  box-shadow: 0 0 10px var(--contrast);
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.section p{
+  margin: 5px 0;
+  font-size: calc(1rem + 10px);
+  color: var(--contrast);
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: calc(1rem + 10px) 5vw;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0 0 5px var(--contrast);
+}
+footer a{
+  display: flex;
+  align-items: center;
+  font-size: calc(3rem + 1vw);
+}
+.facebook{
+  color: #4267B2;
+}
+.instagram{
+  color: #FD1D1D;
+}
+.whatsapp{
+  color: #25D366;
+}
+.recomendations h3{
+  padding: 1rem 5vw;
+  font-size: calc(1rem + 1vw);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+.recomendations span{
+  font-size: calc((1rem + 1vw + 10px) * 0.5);
+}
+.recomendations{
+  box-shadow: 0 0 5px var(--secondary);
+}
+.custom-shape-divider-top-1670423651 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1670423651 svg {
+  position: relative;
+  display: block;
+  transform: rotate(180deg);
+  width: calc(100% + 1.3px);
+  height: 92px;
+}
+
+.custom-shape-divider-top-1670423651 .shape-fill {
+  fill: var(--alternative-main);
+}
