@@ -168,7 +168,7 @@ button{transition: 1s;}
 }
 .section p{
   margin: 5px 0;
-  font-size: calc(1rem + 10px);
+  font-size: calc(1vh + 1rem);
   color: var(--contrast);
 }
 footer{
