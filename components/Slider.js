@@ -52,7 +52,7 @@ const Slider = () => {
   {
     ImageArray && ImageArray.map((img, idx) => {
       if(Slide === idx) return <div className='img-slide' key={idx}>
-        <Image src={img} fill/>
+        <Image src={img} alt="Cevichería El Picante" fill/>
       </div>
     })
   }
