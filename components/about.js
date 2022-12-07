@@ -13,7 +13,7 @@ const About = () => {
     <h2>El buen sabor, nuestra especialidad</h2>
     <p>Somos un restaurante fundado en 1951 en la provincia de Lima. Nuestro restaurante es una de las mejores opciones gastronómicas de comida marina en la ciudad. Podrás disfrutar una excelente comida y los mejores cócteles de autor en un ambiente completamente instagrameable! Una experiencia realmente inolvidable.</p>
     <div className='restaurant'>
-        <Image src="/restaurante.jpg" fill/>
+        <Image alt="Cevichería El Picante" src="/restaurante.jpg" fill/>
     </div>
   </motion.div>
 

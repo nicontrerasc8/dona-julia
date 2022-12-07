@@ -26,7 +26,7 @@ const BrandNavBar = () => {
 
   return <nav className={NavActiveColor ? "solidBack" : ""}>
       <div className='image-logo'>
-      <Image src="/logo.png" fill/>
+      <Image  alt="Cevichería El Picante" src="/logo.png" fill/>
       </div>
       <div className="nav-btns">
       <a target={"_blank"} 
