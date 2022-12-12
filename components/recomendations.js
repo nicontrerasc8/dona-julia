@@ -5,24 +5,16 @@ import {motion} from "framer-motion"
 
 const ArrOfRecomendations = [
     {
-        r: "El ceviche mixto estuvo bien rico y el ambiente me gustó, lo recomiendo.",
-        p: "Alfredo Ruíz"
+        r: "El ambiente muy bonito y las hamburguesas buenazas. Fuí con mi familia y la pasamos muy bien.",
+        p: "Isabel Díaz"
     },
     {
-        r: "Todos los platos bien servidos y de calidad, fuí con mi familia y todos salimos satisfechos.",
-        p: "Luis Alfaro"
+        r: "Ordené una hamburguesa de la casa y una cerveza artesanal. Definitivamente vuelvo.",
+        p: "Esteban Rodríguez"
     },
     {
-        r: "El ceviche de conchas negras buenazo, fuí con mis papás y la pasamos muy bien.",
+        r: "Me gustó mucho la atención y la calidad de la comida. 100% recomendable.",
         p: "Ana Cevallos"
-    },
-    {
-        r: "El arroz con mariscos estuvo espectacular, volveré pronto con mis amigos.",
-        p: "José Benitez"
-    },
-    {
-        r: "Me atendieron con mucha amabilidad y salí satisfecho del restaruante. Todo excelente.",
-        p: "Joaquín Pérez"
     },
 ]
 

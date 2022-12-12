@@ -2,12 +2,11 @@ import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import {motion} from "framer-motion"
 import { DropInFromBottom, DropInFromTop } from '../animations'
+import Link from 'next/link'
 
 
 const ImageArray = [
-  "/ceviche1.jpg",
-  "/ceviche2.jpg",
-  "/ceviche3.jpg",
+  "/hamburger.jpg",
 ]
 
 
@@ -35,18 +34,13 @@ const Slider = () => {
   whileInView={{ opacity: 1 }}
   transition={{delay: .5}} className='slider-header'>
     <div>
-    <h2>Disfruta la deliciosa sazón del norte peruano</h2>
-    <h5>
-      La mejor comida marina chiclayana en Lima
-    </h5>
-    <a target={"_blank"} 
-       href={`https://api.whatsapp.com/send?phone=51949161510&text="¡Hola! vengo de su página web. Me gustaría hacer una reserva."`}
-       rel='noreferrer'
-    >
+    <h2>Deleita tu paladar con las mejores hamburguesas</h2>
+    <h5>¡Disfruta unas exquisitas hamburguesas con tus familiares y amigos!</h5>
+    <Link href={"/carta"}>
           <button className='button'>
-      Haz una reserva
+      Mira la carta
     </button>
-    </a>
+    </Link>
     </div>
   </motion.section>
   {

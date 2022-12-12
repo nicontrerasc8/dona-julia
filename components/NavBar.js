@@ -4,6 +4,7 @@ import Image from 'next/image'
 import {motion} from "framer-motion"
 import Link from 'next/link'
 import { useState } from 'react'
+import {FaHamburger} from "react-icons/fa"
 
 
 
@@ -25,15 +26,22 @@ const BrandNavBar = () => {
       }, [])
 
   return <nav className={NavActiveColor ? "solidBack" : ""}>
-      <div className='image-logo'>
-      <Image  alt="Cevichería El Picante" src="/logo.png" fill/>
-      </div>
+      <Link href={"/"}>
+        <h2 className='logo'>
+            <FaHamburger/> Nick's Burgers
+        </h2>
+      </Link>
       <div className="nav-btns">
+        <Link href={"/carta"}>
+            <button className='button'>
+                Carta
+            </button>
+        </Link>
       <a target={"_blank"} 
        href={`https://api.whatsapp.com/send?phone=51949161510&text="¡Hola! vengo de su página web. Me gustaría hacer una reserva."`}
        rel='noreferrer'
           >
-                    <button className='button nav-button'>
+                    <button className='button white-button'>
                          Haz tu reserva
                     </button>
                </a>

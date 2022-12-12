@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return <>
   <Head>
     <title>
-      El Picante | Cevichería Gourmet
+      Nick's Burgers
     </title>
   </Head>
   <BrandNavBar/>
