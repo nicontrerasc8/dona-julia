@@ -28,7 +28,7 @@ const BrandNavBar = () => {
   return <nav className={NavActiveColor ? "solidBack" : ""}>
       <Link href={"/"}>
         <h2 className='logo'>
-            <FaHamburger/> Nick's Burgers
+            <FaHamburger/> Nick&apos;s Burgers
         </h2>
       </Link>
       <div className="nav-btns">
