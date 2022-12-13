@@ -47,24 +47,24 @@ const arr = [
     catTitle: "Platos de fondo",
     data: [
       {
-        i: "Hamburguesa con papas fritas y ensalada",
-        p: 20
+        i: "Burger al plato",
+        p: 20,
+        d: "Hamburguesa de res con papas fritas y ensalada."
       },
       {
-        i: "Hamburguesa con camote frito y ensalada",
-        p: 22
+        i: "Salchipapa",
+        p: 17,
+        d: "La receta clásica con un huevo frito y salsas al gusto."
       },
       {
-        i: "Salchipapa con hamburguesa",
-        p: 22
+        i: "Salchiburger",
+        p: 22,
+        d: "Salchipapa con un adicional de trozos de hamburguesa."
       },
       {
-        i: "Pollo broaster con papas fritas y ensalada",
-        p: 18
-      },
-      {
-        i: "Pollo broaster con camote frito y ensalada",
-        p: 20
+        i: "Chicken al plato",
+        p: 20,
+        d: "Pollo a la plancha con papas fritas y ensalada."
       }
     ]
   },
@@ -77,8 +77,8 @@ const arr = [
         p: 5
       },
       {
-        i: "Camote frito",
-        p: 7
+        i: "Platano frito",
+        p: 4
       },
       {
         i: "Hot-dog",
@@ -94,7 +94,8 @@ const arr = [
       },
       {
         i: "Onion rings",
-        p: 6
+        p: 6,
+        d: "Aros de cebolla arrobozados"
       }
     ]
   },
@@ -104,11 +105,13 @@ const arr = [
     data: [
       {
         i: "Agua mineral",
-        p: 3
+        p: 3,
+        d: "Sin gas o con gas"
       },
       {
         i: "Gaseosas",
-        p: 3.5
+        p: 3.5,
+        d: "Coca Cola, Inca Kola, Sprite, Fanta o Guaraná."
       },
       {
         i: "Vaso de limonada",
