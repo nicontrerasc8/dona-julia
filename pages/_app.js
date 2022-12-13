@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return <>
   <Head>
     <title>
-      Nick's Burgers
+      Nick&apos;s Burgers
     </title>
   </Head>
   <BrandNavBar/>
