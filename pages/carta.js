@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import {GiHamburger, GiFrenchFries, GiMeal, GiCakeSlice} from "react-icons/gi"
 import {FaGlassCheers} from "react-icons/fa"
+import {motion} from "framer-motion"
 
 
 const arr = [
@@ -163,7 +164,12 @@ const Carta = () => {
     <section className='cart-grid'>
       {
         arr.length && arr.map((i, idx) =>{
-          return <div key={idx}>
+          return <motion.div 
+          initial={{ opacity: 0, left: "-100vw" }}
+          viewport={{ once: true }}
+          whileInView={{ opacity: 1, left: 0 }}
+          transition={{delay: .1}}
+          key={idx}>
             <i>{i.icon}</i>
             <h3>{i.catTitle}</h3>
               {
@@ -173,7 +179,7 @@ const Carta = () => {
                   </li>
                 })
               }
-          </div>
+          </motion.div>
         })
       }
     </section>
