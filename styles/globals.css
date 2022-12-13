@@ -354,21 +354,30 @@ footer a {
   font-size: calc(1vw + 1vh + 1rem);
 }
 .cart-grid li{
-  display: grid;
-  grid-template-columns: 1fr 60px;
-  margin-bottom: 15px;
-  text-align: left;
+  margin-bottom: 10px;
   grid-gap: 5px;  
   justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
 }
-.cart-grid li span{
-  display: flex;
+.cart-grid li article{
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
+  text-align: left;
+  display: grid;
+  gap: 5px;
+  margin-bottom: 5px;
+  grid-template-columns: 1fr 60px;
 }
-.cart-grid li span:last-child{
-  display: flex;
-  justify-content: right;
+.cart-grid li article:first-child{
+  font-weight: 600;
+  font-size: calc(1rem + 5px);
+}
+.desc{
+  font-size: calc(1rem);
+}
+.cart-grid li article span:last-child{
+  text-align: right;
 }
 .cart-grid i{
   font-size: calc(3vw + 3vh + 4rem);

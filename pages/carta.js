@@ -11,33 +11,35 @@ const arr = [
     catTitle: "Hamburguesas",
     data:[
       {
-        i: "Hamburguesa clásica",
-        p: 14,  
+        i: "Clásica",
+        p: 14, 
+        d: "Hamburguesa de res con tomate, lechuga y salsas al gusto." 
       },
       {
-        i: "Hamburguesa royal",
-        p: 16
+        i: "Royal",
+        p: 16,
+        d: "Hamburguesa de res con huevo, queso y salsas al gusto."
       },
       {
-        i: "Hamburugesa de la casa",
-        p: 19
+        i: "Queso y tocino",
+        p: 17,
+        d: "Hamburguesa de res con queso, tocino y salsas al gusto."
       },
       {
-        i: "Hamburugesa con chorizo",
-        p: 17
+        i: "De la casa",
+        p: 19,
+        d: "Hamburguesa de res con platano frito, huevo, tocino y salsas al gusto."
       },
       {
-        i: "Hamburuguesa extrema",
-        p: 20
+        i: "Hamburguesa extrema",
+        p: 20,
+        d: "Hamburguesa con chorizo, huevo y salsas al gusto."
       },
       {
-        i: "Hamburguesa de pollo",
+        i: "De pollo",
         p: 15,
+        d: "Hamburguesa de pollo con tomate, lechuga y salsas al gusto."
       },
-      {
-        i: "Hamburguesa vegana",
-        p: 20
-      }
     ]
   },
   {
@@ -105,7 +107,7 @@ const arr = [
         p: 3
       },
       {
-        i: "Gaseosa",
+        i: "Gaseosas",
         p: 3.5
       },
       {
@@ -175,7 +177,14 @@ const Carta = () => {
               {
                 i.data.length && i.data.map((info, id) => {
                   return <li key={id}>
-                    <span>{info.i}</span> <span className='price'>s/. {info.p}</span>
+                    <article>
+                      <span>{info.i}</span> <span className='price'>s/. {info.p}</span>
+                    </article>
+                    {
+                      info.d && <article className='desc'>
+                      <span>{info.d}</span> <span/>
+                    </article>
+                    }
                   </li>
                 })
               }

@@ -34,7 +34,7 @@ const Slider = () => {
   whileInView={{ opacity: 1 }}
   transition={{delay: .5}} className='slider-header'>
     <div>
-    <h2>Deleita tu paladar con las mejores hamburguesas</h2>
+    <h2>La sazón de Nick</h2>
     <h5>¡Disfruta unas exquisitas hamburguesas con tus familiares y amigos!</h5>
     <Link href={"/carta"}>
           <button className='button'>
