@@ -5,15 +5,15 @@ import {motion} from "framer-motion"
 
 const ArrOfRecomendations = [
     {
-        r: "El ambiente muy bonito y las hamburguesas buenazas. Fuí con mi familia y la pasamos muy bien.",
+        r: "El borgoña Castellano es el vino semiseco más rico que he probado.",
         p: "Isabel Díaz"
     },
     {
-        r: "Ordené una hamburguesa de la casa y una cerveza artesanal. Definitivamente vuelvo.",
+        r: "Me encantó el Andariego Mosto Verde, apenas lo olí sabía que era un pisco de calidad.",
         p: "Esteban Rodríguez"
     },
     {
-        r: "Me gustó mucho la atención y la calidad de la comida. 100% recomendable.",
+        r: "Con el pisco Castellano se puede preparar un muy buen Pisco Sour.",
         p: "Ana Cevallos"
     },
 ]
@@ -37,7 +37,6 @@ const Recomendations = () => {
   }, [Slide, SlidesLength])
 
   return <div className='section alternative-back recomendations'>
-    <h2 className='simple-h2'>Lo que dicen de nosotros:</h2>
     <AnimatePresence
         initial={false}
         exitBeforeEnter={true}
@@ -50,7 +49,7 @@ const Recomendations = () => {
             animate="visible"
             exit="exit"
                 >
-                    <h3>&#8220;{data.r}&quot;</h3>
+                    <h3>&#8220;{data.r}&#8221;</h3>
               <span>{data.p}</span>
                 </motion.article>
             })

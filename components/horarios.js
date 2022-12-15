@@ -12,11 +12,8 @@ const Horarios = () => {
   className='section alternative-back'>
     <h2 className='simple-h2'>Horarios de atención</h2>
     <p>
-        Lunes a Jueves: 12pm a 11pm
+        Lunes a sábado: 9am a 6pm
     </p>
-    <p>
-        Viernes, sábados y domingos: 11am a 12am
-    </p> 
   </div>
   </>
 }

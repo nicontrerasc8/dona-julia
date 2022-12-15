@@ -4,7 +4,9 @@ import Image from 'next/image'
 import {motion} from "framer-motion"
 import Link from 'next/link'
 import { useState } from 'react'
-import {FaHamburger} from "react-icons/fa"
+import {FaWineBottle, FaShoppingCart, FaBoxOpen} from "react-icons/fa"
+import {IoWine} from "react-icons/io5"
+import UseCartContext from '../context/context'
 
 
 
@@ -12,7 +14,10 @@ const BrandNavBar = () => {
 
     const [OpenNav, setOpenNav] = useState(false)
      const ChangeNavigationValue = () => setOpenNav(!OpenNav)
+     const [String, setString] = useState("")
      const [NavActiveColor, setNavActiveColor] = useState(false);
+     const {ProductsCount} = UseCartContext()
+    
 
      useEffect(()=>{
           const HandleScroll = () => {
@@ -28,24 +33,24 @@ const BrandNavBar = () => {
   return <nav className={NavActiveColor ? "solidBack" : ""}>
       <Link href={"/"}>
         <h2 className='logo'>
-            <FaHamburger/> Nick&apos;s Burgers
+            <FaWineBottle/> Licores MCT
         </h2>
       </Link>
       <div className="nav-btns">
         <Link href={"/carta"}>
-            <button className='button'>
-                Carta
+            <button className='button white-button'>
+                <IoWine/> <text>Catálogo</text>
             </button>
         </Link>
-      <a target={"_blank"} 
-       href={`https://api.whatsapp.com/send?phone=51949161510&text="¡Hola! vengo de su página web. Me gustaría hacer una reserva."`}
-       rel='noreferrer'
-          >
-                    <button className='button white-button'>
-                         Haz tu reserva
+        <Link href={"/carrito"}>
+        <button className='button white-button'>
+                    <FaShoppingCart/> <text>Carrito</text> { ProductsCount() > 0 &&
+                        <>
+                        &#40;{ProductsCount()}&#41;
+                        </>
+                    }
                     </button>
-               </a>
-               
+        </Link>
           </div>
           
   </nav>

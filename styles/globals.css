@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Secular+One&family=Source+Sans+Pro&display=swap');
 
 :root {
-  --main: black;
-  --alternative-main: rgb(26, 26, 27);
-  --secondary: #f13709;
-  --contrast: white;
-  --contrastSoft: rgb(244, 233, 233);
+  --main: white;
+  --alternative-main: rgb(240, 240, 255);
+  --secondary: #670086;
+  --contrast: black;
+  --contrastSoft: rgb(1, 9, 24);
 }
 a{
   color: inherit;
@@ -43,7 +43,7 @@ button {
 
 * {
   outline: none;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
 
 }
@@ -66,7 +66,7 @@ article {
 nav {
   padding: 1rem 5vw;
   height: calc(6rem + 10px);
-  background-color: transparent;
+  background-color: rgba(255,255,255, .5);
   color: var(--contrast);
   font-family: 'Rubik', sans-serif;
   position: fixed;
@@ -94,7 +94,7 @@ nav.solidBack {
   background-color: var(--main);
 }
 
-.cart {
+.pagina {
   margin-top: calc(6rem + 10px);
   display: flex;
   flex-direction: column;
@@ -104,7 +104,7 @@ nav.solidBack {
   padding: 1rem 5vw;
 }
 
-.cart h2 {
+.pagina h2 {
   font-size: calc(2vw + 1rem + 1vh);
 }
 
@@ -113,8 +113,11 @@ nav.solidBack {
     position: sticky;
     background-color: var(--main);
   }
+  .button text{
+    display: none;
+  }
 
-  .cart {
+  .pagina {
     margin-top: 0;
   }
 }
@@ -127,12 +130,12 @@ button {
   cursor: pointer;
   border: none;
   padding: 10px;
-  transition: 1s color 0;
+  transition: .5s;
   border-radius: 5px;
 }
 
 nav .button {
-  font-size: calc(1vmax + 10px);
+  font-size: calc(1vmax + 1rem - 5px);
 }
 
 .nav-btns {
@@ -143,23 +146,25 @@ nav .button {
 
 .button:hover,
 .button.white-button:hover {
-  transform: translateY(-10px);
-  background-color: var(--secondary);
+  transform: scale(1.05);
+}
+.button.white-button:hover{
+  color: var(--secondary);
 }
 
 .button.white-button {
-  color: var(--main);
-  background-color: var(--contrast);
+  color: var(--contrast);
+  background-color: var(--alternative-main);
 }
 
 .slider {
-  height: calc(35vw + 20rem);
+  height: calc(28vw + 20rem);
   width: 100vw;
 }
 
 .img-slide {
-  height: 100%;
-  width: 100%;
+  height: calc(35vw + 20rem);
+  width: 100vw;
   z-index: 0;
   position: relative;
 }
@@ -167,7 +172,6 @@ nav .button {
 .slider-header {
   position: absolute;
   height: calc(28vw + 20rem);
-  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,14 +179,13 @@ nav .button {
   width: 100vw;
   color: var(--main);
   text-align: center;
-  color: var(--contrast);
   z-index: 2;
 }
 
 .slider-header div {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  padding: 1rem;
+  padding: 1rem 5%;
 }
 
 .slider-header h2 {
@@ -191,6 +194,7 @@ nav .button {
 }
 
 .slider-header h5 {
+  color: var(--main);
   margin: auto 0 1rem 0;
   font-size: calc((1rem + 1vw + 1vh + 10px) / 2);
 }
@@ -203,11 +207,12 @@ nav .button {
 
 .about {
   margin: 2rem 5vw;
+  padding: 2rem 0;
   display: flex;
   position: relative;
   background-color: var(--main);
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 10%;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -235,7 +240,7 @@ nav .button {
 .restaurant {
   position: relative;
   width: clamp(300px, 50vw, 50vw);
-  height: clamp(150px, 40vh, 40vh);
+  height: clamp(200px, calc(50vw * .6), calc(50vw * .6));
 }
 
 .restaurant img {
@@ -333,53 +338,122 @@ footer a {
 
 .cart-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
   justify-content: center;
-  gap: 2rem;
 }
 
 .cart-grid div {
   display: flex;
   flex-direction: column;
-  background-color: var(--alternative-main);
-  width: clamp(300px, 30%, 30%);
+  width: clamp(300px, 80%, 80%);
   border-radius: 10px;
-  box-shadow: 0 0 10px var(--contrastSoft);
   padding: 10px 15px;
 }
 .cart-grid h3 {
-  padding: 0 0 calc(1rem + 5px) 0;
-  margin: 0;
+  margin: 1rem 0 ;
   font-size: calc(1vw + 1vh + 1rem);
-}
-.cart-grid li{
-  margin-bottom: 10px;
-  grid-gap: 5px;  
-  justify-content: space-between;
-  font-family: 'Montserrat', sans-serif;
-}
-.cart-grid li article{
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
-  display: grid;
-  gap: 5px;
-  margin-bottom: 5px;
-  grid-template-columns: 1fr 60px;
-}
-.cart-grid li article:first-child{
-  font-weight: 600;
-  font-size: calc(1rem + 5px);
-}
-.desc{
-  font-size: calc(1rem);
-}
-.cart-grid li article span:last-child{
-  text-align: right;
 }
 .cart-grid i{
   font-size: calc(3vw + 3vh + 4rem);
   color: var(--secondary);
+}
+.cart-grid ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.cart-grid ul li{
+  border-radius: 10px;
+  width: clamp(280px, 30%, 30%);
+  height: auto;
+  background-color: var(--alternative-main);
+  box-shadow: 0 0 10px var(--contrastSoft);
+}
+.cart-grid img{
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cart-grid ul li section{
+  padding: 1rem 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.cart-grid ul li section strong, .cart-grid ul li section button{
+  font-size: calc(1vh + 1rem);
+}
+.carrito{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carrito div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--alternative-main);
+  border-radius: 10px;
+  width: 70%;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px var(--contrast);
+}
+.carrito img{
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+}
+.carrito div section{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 10px;
+}
+.carrito div section strong{
+  font-size: calc(1vw + 1vh + 10px);
+  margin-bottom: 10px;
+}
+.counter{
+  display: flex;
+  align-items: center;
+  font-size: clamp(calc(1rem + 5px), calc(1vmax + 5px), calc(1vmax + 5px));
+  gap: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 2px solid var(--secondary);
+}
+.counter button{
+  background-color: var(--secondary);
+  font-size: clamp(calc(1rem + 5px), calc(1vmax + 5px), calc(1vmax + 5px));
+  border: none;
+  color: var(--main);
+  padding: 5px 10px;
+}
+@media screen and (max-width: 700px){
+  .carrito div{
+    flex-direction: column;
+  }
+  .carrito div img{
+    width: 100%;
+  }
+  .carrito div section{
+    align-items: center;
+    text-align: center;
+  }
+}
+.total{
+  font-size: calc(2vmin + 1rem);
+  font-weight: 600;
 }

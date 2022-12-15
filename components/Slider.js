@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 
 const ImageArray = [
-  "/hamburger.jpg",
+  "/back.jpg", "/back2.jpg"
 ]
 
 
@@ -34,11 +34,10 @@ const Slider = () => {
   whileInView={{ opacity: 1 }}
   transition={{delay: .5}} className='slider-header'>
     <div>
-    <h2>La sazón de Nick</h2>
-    <h5>¡Disfruta unas exquisitas hamburguesas con tus familiares y amigos!</h5>
+    <h2>Piscos y vinos de la mejor calidad</h2>
     <Link href={"/carta"}>
           <button className='button'>
-      Mira la carta
+      Ver el catálogo
     </button>
     </Link>
     </div>

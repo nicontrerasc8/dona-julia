@@ -11,15 +11,17 @@ const About = () => {
   transition={{ delay: 1 }}
   viewport={{ once: true }}
   className='about alternative-back '>
-    <h2>El mejor restaurante de hamburguesas en Lima</h2>
-    <p>Somos un restaurante fundado en 1991 en la ciudad de Lima. Nos apasiona cocinar hamburguesas de la mejor calidad para nuestros clientes. Podrás disfrutar una excelente comida y los mejores cócteles de autor en un ambiente completamente instagrameable! Una experiencia realmente inolvidable.</p>
+    <h2>Nuestra filosofia.</h2>
+    <p>Desde su fundación en 1898 en la Bodega Castellano se ha trabajado en la búsqueda de la perfección, combinando la tecnología y el arte, para elaborar vinos y piscos de primera calidad.</p>
+    <p>En la Bodega Castellano, estamos comprometidos con el contínuo desarrollo y crecimiento de nuestros trabajadores, como también la de nuestros socios estratégicos (proveedores y distribuidores) en donde la calidad de nuestros productos satisfagan de la mejor manera posible las necesidades del consumidor.</p>
+    <p>Asimismo comprometidos con el desarrollo de nuestro país y la preservación del medio ambiente en busca de un futuro mejor y en beneficio de las próximas generaciones.</p>
     <Link href={"/carta"}>
-          <button className='button'>
-      Mira la carta
+      <button className='button'>
+      Ver el catálogo
     </button>
     </Link>
     <div className='restaurant'>
-        <Image alt="Nick's Burger" src="/restaurante.jpg" fill/>
+        <Image alt="Nick's Burger" src="/wine.jpg" fill/>
     </div>
   </motion.div>
 

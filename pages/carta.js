@@ -3,195 +3,74 @@ import React from 'react'
 import {GiHamburger, GiFrenchFries, GiMeal, GiCakeSlice} from "react-icons/gi"
 import {FaGlassCheers} from "react-icons/fa"
 import {motion} from "framer-motion"
+import Item from '../components/item'
 
 
 const arr = [
   {
-    icon: <GiHamburger/>,
-    catTitle: "Hamburguesas",
-    data:[
+    catTitle: "Piscos",
+    data: [
       {
-        i: "Clásica",
-        p: 14, 
-        d: "Hamburguesa de res con tomate, lechuga y salsas al gusto." 
+        img: 'https://firebasestorage.googleapis.com/v0/b/racing-online-store.appspot.com/o/uploads%2F1643057593094.0e2d27-4f47-afb1-1540-a1d0406a30c1?alt=media&token=12a0929c-3f8f-421b-8d08-010c613afa60',
+        name: 'Pisco quebranta Castellano 750ml',
+        price: 20,
       },
       {
-        i: "Royal",
-        p: 16,
-        d: "Hamburguesa de res con huevo, queso y salsas al gusto."
+        img: 'https://firebasestorage.googleapis.com/v0/b/racing-online-store.appspot.com/o/uploads%2F1643058074182.713e7f-ea7e-d5cd-6746-d423d821dc7?alt=media&token=069af3ac-3fb6-429f-9cb4-a008de74eb75',
+                         name: 'Pisco acholado Andariego 750ml',
+                         price: 40,
       },
       {
-        i: "Queso y tocino",
-        p: 17,
-        d: "Hamburguesa de res con queso, tocino y salsas al gusto."
+        img: 'https://firebasestorage.googleapis.com/v0/b/racing-online-store.appspot.com/o/uploads%2F1643057952748.6bbd8f7-6b47-440-67b2-3ae88880d41?alt=media&token=7cca2548-13e8-46bc-9cae-70bce30ccc96',
+        name: 'Pisco mosto verde Andariego 750ml',
+        price: 40,
       },
       {
-        i: "De la casa",
-        p: 19,
-        d: "Hamburguesa de res con platano frito, huevo, tocino y salsas al gusto."
-      },
-      {
-        i: "Hamburguesa extrema",
-        p: 20,
-        d: "Hamburguesa con chorizo, huevo y salsas al gusto."
-      },
-      {
-        i: "De pollo",
-        p: 15,
-        d: "Hamburguesa de pollo con tomate, lechuga y salsas al gusto."
+        img: 'https://firebasestorage.googleapis.com/v0/b/racing-online-store.appspot.com/o/uploads%2F1643057710181.a4814b-c02c-1d33-42de-cee768d6b4?alt=media&token=60294a92-6b4f-48f0-9add-6cb174a8f7e3',
+        name: 'Pisco italia Andariego 750ml',
+        price: 40,
       },
     ]
   },
   {
-    icon: <GiMeal/>,
-    catTitle: "Platos de fondo",
+    catTitle: 'Vinos',
     data: [
-      {
-        i: "Burger al plato",
-        p: 20,
-        d: "Hamburguesa de res con papas fritas y ensalada."
-      },
-      {
-        i: "Salchipapa",
-        p: 17,
-        d: "La receta clásica con un huevo frito y salsas al gusto."
-      },
-      {
-        i: "Salchiburger",
-        p: 22,
-        d: "Salchipapa con un adicional de trozos de hamburguesa."
-      },
-      {
-        i: "Chicken al plato",
-        p: 20,
-        d: "Pollo a la plancha con papas fritas y ensalada."
-      }
+         {
+              img: 'https://firebasestorage.googleapis.com/v0/b/racing-online-store.appspot.com/o/uploads%2F1643056838968.c658b85-2ee8-a647-a3-5ef5c6077a2a?alt=media&token=3dd9b9bf-543c-4855-9587-a4a39c851962',
+              name: "Vino borgoña 750ml",
+              price: 15,
+         },
+         {
+              img: 'https://firebasestorage.googleapis.com/v0/b/racing-online-store.appspot.com/o/uploads%2F1643056744399.1ee8df6-07ab-65b-34a1-6e803a8bb68?alt=media&token=d83b856b-b01a-4353-8426-63ffe9db8954',
+              name: 'Vino rosé 750ml',
+              price: 15,
+         },
     ]
-  },
-  {
-    icon: <GiFrenchFries/>,
-    catTitle: "Complementos",
-    data: [
-      {
-        i: "Papas fritas",
-        p: 5
-      },
-      {
-        i: "Platano frito",
-        p: 4
-      },
-      {
-        i: "Hot-dog",
-        p: 8
-      },
-      {
-        i: "Chorizo parrillero",
-        p: 10
-      },
-      {
-        i: "Queso edam",
-        p: 4
-      },
-      {
-        i: "Onion rings",
-        p: 6,
-        d: "Aros de cebolla arrobozados"
-      }
-    ]
-  },
-  {
-    icon: <FaGlassCheers/>,
-    catTitle: "Bebidas",
-    data: [
-      {
-        i: "Agua mineral",
-        p: 3,
-        d: "Sin gas o con gas"
-      },
-      {
-        i: "Gaseosas",
-        p: 3.5,
-        d: "Coca Cola, Inca Kola, Sprite, Fanta o Guaraná."
-      },
-      {
-        i: "Vaso de limonada",
-        p: 5
-      },
-      {
-        i: "Vaso de chicha",
-        p: 5
-      },
-      {
-        i: "Jarra de limonada",
-        p: 12
-      },
-      {
-        i: "Jarra de chicha",
-        p: 12
-      },
-    ]
-  },
-  {
-    icon: <GiCakeSlice/>,
-    catTitle: "Postres",
-    data: [
-      {
-        i: "Torta de chocolate",
-        p: 10
-      },
-      {
-        i: "Pie de manzana",
-        p: 9
-      },
-      {
-        i: "Tres leches",
-        p: 9
-      },
-      {
-        i: "Pie de limón",
-        p: 10
-      },
-      {
-        i: "Torta de alfajor",
-        p: 11
-      },
-      {
-        i: "Picarones",
-        p: 8
-      },
-    ]
-  }
+},
 ]
 
 const Carta = () => {
-  return <div className='cart'>
-    <h2>Nuestra carta</h2>
+  return <div className='pagina'>
     <section className='cart-grid'>
       {
         arr.length && arr.map((i, idx) =>{
-          return <motion.div 
+          return <>
+                  <h3>{i.catTitle}</h3>
+            <motion.div 
           initial={{ opacity: 0, left: "-100vw" }}
           viewport={{ once: true }}
           whileInView={{ opacity: 1, left: 0 }}
           transition={{delay: .1}}
           key={idx}>
-            <i>{i.icon}</i>
-            <h3>{i.catTitle}</h3>
-              {
+             <ul>
+             {
                 i.data.length && i.data.map((info, id) => {
-                  return <li key={id}>
-                    <article>
-                      <span>{info.i}</span> <span className='price'>s/. {info.p}</span>
-                    </article>
-                    {
-                      info.d && <article className='desc'>
-                      <span>{info.d}</span> <span/>
-                    </article>
-                    }
-                  </li>
+                  return <Item info={info} id={id}/>
                 })
               }
+             </ul>
           </motion.div>
+          </>
         })
       }
     </section>
