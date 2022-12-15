@@ -26,7 +26,7 @@ const CartProduct = ({info}) => {
 
 
     return <div>
-    <img src={info.img}/>
+    <img src={info.img} alt="Bodega Castellano"/>
     <section>
         <strong>{info.name}</strong>
         <span>Precio unitario: s/. {info.price}</span>

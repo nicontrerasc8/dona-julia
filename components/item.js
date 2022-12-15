@@ -6,7 +6,7 @@ const Item = ({id, info}) => {
     const {AddToCart} = UseCartContext()
 
   return <li key={id}>
-  <img src={info.img}/>
+  <img src={info.img} alt="Bodega Castellano"/>
   <section>
      <strong>
        {info.name}
