@@ -65,7 +65,7 @@ const Carta = () => {
              <ul>
              {
                 i.data.length && i.data.map((info, id) => {
-                  return <Item info={info} id={id}/>
+                  return <Item info={info} key={id}/>
                 })
               }
              </ul>
