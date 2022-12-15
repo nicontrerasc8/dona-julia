@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return <>
   <Head>
     <title>
-      Nick&apos;s Burgers
+      Licores MCT
     </title>
   </Head>
   <ContextProvider>

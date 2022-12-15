@@ -21,7 +21,7 @@ const About = () => {
     </button>
     </Link>
     <div className='restaurant'>
-        <Image alt="Nick's Burger" src="/wine.jpg" fill/>
+        <Image alt="Bodega Castellano" src="/wine.jpg" fill/>
     </div>
   </motion.div>
 
