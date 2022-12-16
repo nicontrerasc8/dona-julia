@@ -138,6 +138,7 @@ button {
   padding: 10px;
   transition: .5s;
   border-radius: 5px;
+  border: 3px solid transparent;
 }
 
 nav .button {
@@ -468,6 +469,10 @@ footer a {
 .button.white-button {
   color: var(--contrast);
   background-color: var(--alternative-main);
+}
+.button.white-button.selected{
+  border: 3px solid var(--secondary);
+  transform: scale(1.05);
 }
 .button.white-button.selected span{
   color: var(--secondary);

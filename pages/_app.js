@@ -25,9 +25,15 @@ function MyApp({ Component, pageProps }) {
         style: {
             fontWeight: "600",
             fontSize: "clamp(calc(1rem + 10px), 2vmin, 2vmin)",
-            border: "3px solid var(--main-green)",
         },
-    }
+    },
+    error:{
+      duration: 5000,
+      style: {
+          fontWeight: "600",
+          fontSize: "clamp(calc(1rem + 10px), 2vmin, 2vmin)",
+      },
+  }
   }}
   />
   <BrandNavBar/>
