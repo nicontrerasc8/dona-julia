@@ -9,37 +9,40 @@ import Item from '../components/item'
 
 const arr = [
 {
-  catTitle: "Pizzas personales",
+  catTitle: "Pizzas artesanales",
   data:[
     {
       img: "https://firebasestorage.googleapis.com/v0/b/k-talogo.appspot.com/o/peperoni.jpeg?alt=media&token=b8373d05-8e10-44ed-b7dc-53882d6c3db5",
       name: "Pepperoni",
-      price: 14,
+      options:[
+        {
+          t: "Personal",
+          p: 14,
+        },
+        {
+          t: "Familiar",
+          p: 28
+        }
+      ]
     },
     {
       img: "https://firebasestorage.googleapis.com/v0/b/k-talogo.appspot.com/o/la-otra.jpeg?alt=media&token=73018dd0-dc37-44fa-9160-a3ba766ba65d",
       name: "La favorita de Fabri",
       desc: "Jamón, pepperoni, tocino, cabanossi y piña",
-      price: 20,
+      options:[
+        {
+          t: "Personal",
+          p: 20,
+        },
+        {
+          t: "Familiar",
+          p: 40
+        }
+      ]
     }
   ]
 },
-{
-  catTitle: "Pizzas familiares",
-  data:[
-    {
-      img: "https://firebasestorage.googleapis.com/v0/b/k-talogo.appspot.com/o/peperoni.jpeg?alt=media&token=b8373d05-8e10-44ed-b7dc-53882d6c3db5",
-      name: "Pepperoni",
-      price: 28,
-    },
-    {
-      img: "https://firebasestorage.googleapis.com/v0/b/k-talogo.appspot.com/o/la-otra.jpeg?alt=media&token=73018dd0-dc37-44fa-9160-a3ba766ba65d",
-      name: "La favorita de Fabri",
-      desc: "Jamón, pepperoni, tocino, cabanossi y piña",
-      price: 40,
-    }
-  ]
-},
+
 ]
 
 const Carta = () => {

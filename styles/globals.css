@@ -110,6 +110,10 @@ nav.solidBack {
   font-size: calc(2vw + 1rem + 1vh);
 }
 
+section .button.white-button{
+  font-size: clamp(20px, 1vmax, 1vmax);  
+}
+
 @media screen and (max-width: 650px) {
   nav {
     position: sticky;
@@ -146,18 +150,7 @@ nav .button {
   flex-direction: row;
 }
 
-.button:hover,
-.button.white-button:hover {
-  transform: scale(1.05);
-}
-.button.white-button:hover{
-  color: var(--secondary);
-}
 
-.button.white-button {
-  color: var(--contrast);
-  background-color: var(--alternative-main);
-}
 
 .slider {
   height: calc(28vw + 20rem);
@@ -395,6 +388,9 @@ footer a {
 .cart-grid ul li section strong, .cart-grid ul li section button{
   font-size: calc(1vh + 1rem);
 }
+.cart-grid ul li section strong:first-child{
+  font-size: calc(2vh + 1rem);
+}
 .carrito{
   width: 100%;
   display: flex;
@@ -460,4 +456,19 @@ footer a {
 .total{
   font-size: calc(2vmin + 1rem);
   font-weight: 600;
+}
+.button:hover,
+.button.white-button:hover {
+  transform: scale(1.05);
+}
+.button.white-button:hover{
+  color: var(--secondary);
+}
+
+.button.white-button {
+  color: var(--contrast);
+  background-color: var(--alternative-main);
+}
+.button.white-button.selected span{
+  color: var(--secondary);
 }
