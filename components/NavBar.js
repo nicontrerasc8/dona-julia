@@ -4,8 +4,9 @@ import Image from 'next/image'
 import {motion} from "framer-motion"
 import Link from 'next/link'
 import { useState } from 'react'
-import {FaWineBottle, FaShoppingCart, FaBoxOpen} from "react-icons/fa"
+import {FaWineBottle, FaShoppingCart, FaBoxOpen, FaPizzaSlice} from "react-icons/fa"
 import {IoWine} from "react-icons/io5"
+import {GiFullPizza} from "react-icons/gi"
 import UseCartContext from '../context/context'
 
 
@@ -33,13 +34,13 @@ const BrandNavBar = () => {
   return <nav className={NavActiveColor ? "solidBack" : ""}>
       <Link href={"/"}>
         <h2 className='logo'>
-            <FaWineBottle/> Licores MCT
+            <GiFullPizza/> Fabrizzio&apos;s Pizza
         </h2>
       </Link>
       <div className="nav-btns">
         <Link href={"/carta"}>
             <button className='button white-button'>
-                <IoWine/> <text>Catálogo</text>
+                <FaPizzaSlice/> <text>Catálogo</text>
             </button>
         </Link>
         <Link href={"/carrito"}>

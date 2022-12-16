@@ -37,8 +37,8 @@ export const ContextProvider = ({children}) => {
         Products.forEach(e => {
 
             var auxiliar
-            if(e.cantidad > 1) auxiliar = e.cantidad + " unidades de " + e.name 
-            else auxiliar = e.cantidad + " unidad de " + e.name 
+            if(e.cantidad > 1) auxiliar = e.cantidad + " pizzas de " + e.name 
+            else auxiliar = e.cantidad + " pizza de " + e.name 
 
             console.log(auxiliar)
             aux.push(auxiliar)

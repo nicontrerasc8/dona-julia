@@ -53,7 +53,7 @@ const Carrito = () => {
                 })
             }
             <p className='total'>Total a pagar: s/. {TotalProductsPrice()}</p>
-            <a href={`https://api.whatsapp.com/send?phone=51949161510&text="¡Hola! Vengo de su página web. Mi pedido es el siguiente: ${FinalWhatsAppString}"`}  target={"_blank"} rel="noreferrer">
+            <a href={`https://api.whatsapp.com/send?phone=51965917524&text="¡Hola! Vengo de su página web. Mi pedido es el siguiente: ${FinalWhatsAppString}"`}  target={"_blank"} rel="noreferrer">
             <button className="button">
                 Hacer el pedido
             </button>

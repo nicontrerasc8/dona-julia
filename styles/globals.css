@@ -3,7 +3,8 @@
 :root {
   --main: white;
   --alternative-main: rgb(240, 240, 255);
-  --secondary: #670086;
+  --secondary: #ca0101;
+  --tertiary: #06ab00;
   --contrast: black;
   --contrastSoft: rgb(1, 9, 24);
 }
@@ -96,6 +97,7 @@ nav.solidBack {
 
 .pagina {
   margin-top: calc(6rem + 10px);
+  background-color: var(--alternative-main);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,12 +162,13 @@ nav .button {
 .slider {
   height: calc(28vw + 20rem);
   width: 100vw;
+  margin-bottom: 2rem;
 }
 
 .img-slide {
   height: calc(35vw + 20rem);
   width: 100vw;
-  z-index: 0;
+  z-index: -1;
   position: relative;
 }
 
@@ -249,6 +252,7 @@ nav .button {
 
 .section {
   padding: 2rem 5vw;
+  background-color: var(--contrastSoft);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -371,7 +375,7 @@ footer a {
   border-radius: 10px;
   width: clamp(280px, 30%, 30%);
   height: auto;
-  background-color: var(--alternative-main);
+  background-color: var(--main);
   box-shadow: 0 0 10px var(--contrastSoft);
 }
 .cart-grid img{
@@ -402,7 +406,7 @@ footer a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: var(--alternative-main);
+  background-color: var(--main);
   border-radius: 10px;
   width: 70%;
   margin-bottom: 2rem;
