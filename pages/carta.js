@@ -12,6 +12,20 @@ const arr = [
   catTitle: "Pizzas artesanales",
   data:[
     {
+      img: "https://firebasestorage.googleapis.com/v0/b/k-talogo.appspot.com/o/WhatsApp%20Image%202022-12-27%20at%208.31.36%20AM.jpeg?alt=media&token=d8613360-0467-4bee-af45-887b2c6f2fc4",
+      name: "Americana",
+      options:[
+        {
+          t: "Personal",
+          p: 14,
+        },
+        {
+          t: "Familiar",
+          p: 28
+        }
+      ]
+    },
+    {
       img: "https://firebasestorage.googleapis.com/v0/b/k-talogo.appspot.com/o/peperoni.jpeg?alt=media&token=b8373d05-8e10-44ed-b7dc-53882d6c3db5",
       name: "Pepperoni",
       options:[
