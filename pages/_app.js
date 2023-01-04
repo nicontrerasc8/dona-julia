@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return <>
   <Head>
     <title>
-      El pez nuestro de cada día
+      Anticuchería Doña Julia
     </title>
   </Head>
   <ContextProvider>

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import {FaWineBottle, FaShoppingCart, FaBoxOpen, FaPizzaSlice} from "react-icons/fa"
 import {IoWine} from "react-icons/io5"
-import {GiCirclingFish} from "react-icons/gi"
+import {MdOutdoorGrill} from "react-icons/md"
 import UseCartContext from '../context/context'
 
 
@@ -35,8 +35,8 @@ const BrandNavBar = () => {
       <Link href={"/"}>
         <h2 className='logo'>
             <span>
-            <GiCirclingFish/>
-            </span> El pez nuestro de cada día
+            <MdOutdoorGrill/>
+            </span> Doña Julia
         </h2>
       </Link>
       <div className="nav-btns">
@@ -55,7 +55,7 @@ const BrandNavBar = () => {
                     </button>
         </Link> */}
         <a target={"_blank"} 
-       href={`https://api.whatsapp.com/send?phone=51995638935&text="¡Hola! vengo de su página web. Me gustaría hacer una reserva."`}
+       href={`https://api.whatsapp.com/send?phone=51987265986&text="¡Hola! vengo de su página web. Me gustaría hacer una reserva."`}
        rel='noreferrer'
           >
                     <button className='button nav-button'>

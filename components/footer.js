@@ -10,7 +10,7 @@ const Footer = () => {
           <FaInstagram/>
       </a>
     <a className='whatsapp' 
-    href={`https://api.whatsapp.com/send?phone=51965917524&text=¡Hola! vengo de su página web.`} 
+    href={`https://api.whatsapp.com/send?phone=51987265986&text=¡Hola! vengo de su página web.`} 
     target={"_blank"} 
     rel="noreferrer">
       <FaWhatsapp/>
