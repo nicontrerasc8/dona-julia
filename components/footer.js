@@ -4,7 +4,7 @@ import {FaInstagram, FaFacebook, FaWhatsapp} from "react-icons/fa"
 const Footer = () => {
   return <footer>
     <a className='instagram' 
-        href='https://www.instagram.com/elpeznuestrodecadadia/' 
+        href='https://www.instagram.com/anticucheriadonajulia/' 
         target={"_blank"} 
         rel="noreferrer" >
           <FaInstagram/>
