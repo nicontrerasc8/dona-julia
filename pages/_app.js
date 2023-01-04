@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return <>
   <Head>
     <title>
-      Fabrizzio&apos;s Pizza
+      El pez nuestro de cada día
     </title>
   </Head>
   <ContextProvider>

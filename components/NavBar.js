@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import {FaWineBottle, FaShoppingCart, FaBoxOpen, FaPizzaSlice} from "react-icons/fa"
 import {IoWine} from "react-icons/io5"
-import {GiFullPizza} from "react-icons/gi"
+import {GiCirclingFish} from "react-icons/gi"
 import UseCartContext from '../context/context'
 
 
@@ -34,11 +34,13 @@ const BrandNavBar = () => {
   return <nav className={NavActiveColor ? "solidBack" : ""}>
       <Link href={"/"}>
         <h2 className='logo'>
-            <GiFullPizza/> Fabrizzio&apos;s Pizza
+            <span>
+            <GiCirclingFish/>
+            </span> El pez nuestro de cada día
         </h2>
       </Link>
       <div className="nav-btns">
-        <Link href={"/carta"}>
+        {/* <Link href={"/carta"}>
             <button className='button white-button'>
                 <FaPizzaSlice/> <text>Catálogo</text>
             </button>
@@ -51,7 +53,15 @@ const BrandNavBar = () => {
                         </>
                     }
                     </button>
-        </Link>
+        </Link> */}
+        <a target={"_blank"} 
+       href={`https://api.whatsapp.com/send?phone=51995638935&text="¡Hola! vengo de su página web. Me gustaría hacer una reserva."`}
+       rel='noreferrer'
+          >
+                    <button className='button nav-button'>
+                         Haz tu reserva
+                    </button>
+               </a>
           </div>
           
   </nav>

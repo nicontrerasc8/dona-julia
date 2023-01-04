@@ -11,6 +11,6 @@ import Carta from "./carta";
 export default function Home() {
   return <>
     <Slider/>
-    <Carta/>
+{/*     <Carta/> */}
   </>
 }

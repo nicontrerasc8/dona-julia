@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Secular+One&family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Ruda:wght@700&family=Secular+One&family=Source+Sans+Pro&family=Titan+One&display=swap');
 :root {
   --main: white;
   --alternative-main: rgb(240, 240, 255);
-  --secondary: #ca0101;
-  --tertiary: #06ab00;
+  --secondary: rgb(220, 5, 127);
+  --tertiary: rgb(235, 201, 4);
   --contrast: black;
   --contrastSoft: rgb(1, 9, 24);
 }
@@ -38,16 +37,14 @@ li {
   list-style: none;
 }
 
-button {
-  font-weight: 600;
-}
 
 * {
   outline: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Titan One', cursive;
+  font-weight: 500;
   box-sizing: border-box;
-
 }
+
 
 div,
 section {
@@ -67,7 +64,7 @@ article {
 nav {
   padding: 1rem 5vw;
   height: calc(6rem + 10px);
-  background-color: rgba(255,255,255, .5);
+  background-color: var(--main);
   color: var(--contrast);
   font-family: 'Rubik', sans-serif;
   position: fixed;
@@ -88,7 +85,18 @@ nav h2 {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  max-width: 65vw;
   font-size: calc(1vw + 1vh + 10px);
+  background: -webkit-linear-gradient(rgb(220, 5, 127), rgb(235, 201, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav h2 span{
+  font-size: calc(2vw + 2vh + 10px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 nav.solidBack {
@@ -134,11 +142,9 @@ button {
 
 .button {
   cursor: pointer;
-  border: none;
   padding: 10px;
   transition: .5s;
   border-radius: 5px;
-  border: 3px solid transparent;
 }
 
 nav .button {
@@ -154,7 +160,7 @@ nav .button {
 
 
 .slider {
-  height: calc(28vw + 20rem);
+  height: calc(40vw + 20rem);
   width: 100vw;
   margin-bottom: 2rem;
 }
@@ -182,6 +188,7 @@ nav .button {
 .slider-header div {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  max-width: clamp(300px, 60vw, 60vw);
   padding: 1rem 5%;
 }
 
@@ -198,8 +205,9 @@ nav .button {
 
 .button {
   color: var(--main);
-  background-color: var(--secondary);
-  font-size: calc((1rem + 1vw + 1vh + 10px) / 2);
+  border: none;
+  background-image: linear-gradient(var(--secondary), var(--tertiary));
+  font-size: calc((1rem + 1vw + 1vh + 10px) / 1.6);
 }
 
 .about {
