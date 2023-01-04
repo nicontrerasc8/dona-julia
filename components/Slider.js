@@ -35,7 +35,7 @@ const Slider = () => {
   transition={{delay: .5}} className='slider-header'>
     <div>
     <h2>Lo mejor de la gastronomía norteña en un solo lugar</h2>
-    <a href={`https://api.whatsapp.com/send?phone=51965917524&text=¡Hola! vengo de su página web. Me gustaría hacer una reserva.`} >
+    <a href={`https://api.whatsapp.com/send?phone=51965917524&text=¡Hola! vengo de su página web. Me gustaría hacer una reserva.`} target={"_blank"} rel="noreferrer">
           <button className='button'>
       Quiero hacer una reserva
     </button>
