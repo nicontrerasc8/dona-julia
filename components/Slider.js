@@ -35,11 +35,11 @@ const Slider = () => {
   transition={{delay: .5}} className='slider-header'>
     <div>
     <h2>Lo mejor de la gastronomía norteña en un solo lugar</h2>
-    <Link href={"/carta"}>
+    <a href={`https://api.whatsapp.com/send?phone=51965917524&text=¡Hola! vengo de su página web. Me gustaría hacer una reserva.`} >
           <button className='button'>
-      Ver el catálogo
+      Quiero hacer una reserva
     </button>
-    </Link>
+    </a>
     </div>
   </motion.section>
   {
